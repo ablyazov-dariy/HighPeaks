@@ -1,81 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-/* RESET */
-*, *::before, *::after {
-    box-sizing: border-box;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content-container {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
 }
-
-* {
-    margin: 0;
-}
-
-body {
-    font-family: "Roboto", serif;
-    line-height: 1.5;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-}
-
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-
-input, button, textarea, select {
-    font: inherit;
-}
-
-p {
-    text-wrap: pretty;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-}
-
-#root, #__next {
-    isolation: isolate;
-}
-
-
-/* FONTS */
-.light {
-    font-weight: 300;
-}
-
-.regular {
-    font-weight: 400;
-}
-
-.medium {
-    font-weight: 500;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.black {
-    font-weight: 900;
-}
-
-/* COLORS */
-
-
-.logo {
-    display: grid;
-    grid-template-columns: 75px 1fr;
-
-    div {
-        text-transform: uppercase;
-        text-align: center;
-        p {
-            font-size: 28px;
-        }
-
-        p:not(:first-child) {
-            font-size: 12px;
-        }
-
-    }
-}
-

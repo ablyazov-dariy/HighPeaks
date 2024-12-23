@@ -1,147 +1,173 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link href="/logo.svg" rel="icon" type="image/svg+xml"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/logo.svg" rel="icon" type="image/svg+xml" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>High Peaks</title>
-</head>
-<body>
-<div id="app">
-    <section class="hero">
+  </head>
+  <body class="font-roboto">
+    <div id="app">
+      <div class="hero">
+        <!--TODO: block responsive-->
+        <header
+          class="content-container flex items-center justify-between gap-16 text-nowrap uppercase"
+        >
+          <div class="grid grid-cols-[75px_1fr] gap-1">
+            <img
+              alt="logo"
+              class="shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+              src="/logo.svg"
+            />
 
-        <header>
-            <div class="logo">
-                <img alt="" src="/logo.svg"/>
-                <div>
-                    <p>High <span class="bold">Peaks</span></p>
-                    <p>Sports And Nature</p>
-                </div>
+            <div class="hidden overflow-hidden text-center md:block">
+              <p class="text-3xl">High <span class="font-bold">Peaks</span></p>
+              <p class="text-xs text-gray">Sports And Nature</p>
             </div>
+          </div>
 
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Book Now</li>
-                </ul>
-            </nav>
+          <nav class="flex-[0_1_400px]">
+            <ul class="flex items-center justify-between gap-4">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <button
+                  class="text-white bg-black rounded-3xl px-[25px] py-[10px]"
+                >
+                  Book Now
+                </button>
+              </li>
+            </ul>
+          </nav>
         </header>
 
+        <!--TODO: block responsive-->
+        <div class="content-container">
+          <h1 class="text-7xl font-black uppercase">Explore The Mountain</h1>
 
-        <h1 class="black">Explore The Mountain</h1>
+          <p class="text-3xl text-gray">Live your dream and explore</p>
 
-        <span>Live your dream and explore</span>
+          <!--todo: underline-->
+          <button class="text-xl font-medium">Explore now</button>
+        </div>
+      </div>
 
-        <button>Explore now</button>
+      <section class="hiking">
+        <!--TODO: block responsive-->
+        <div class="content-container">
+          <!--TODO: underline-->
+          <h2 class="text-5xl font-bold">Hiking the Ancient Pine Forest</h2>
 
-    </section>
+          <span class="text-base text-gray">3,420m(11,188ft)</span>
+          <span class="text-base text-gray">37°23'8.42"N 118°10 43.91"E</span>
+          <span class="text-base text-gray">Inyo National Forest</span>
 
-    <section class="hiking">
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam turpis
+            odio integer vitae porta mattis. Vel, blandit enim diam est.
+            Aliquam, lobortis dui neque nisl quis pellentesque porttitor. A
+            nulla eget sed pellentesque nisl semper elit enim. Felis at
+            tincidunt consequat mattis egestas egestas sapien sed. Sollicitudin
+            sed habitasse amet ac libero nibh et viverra. Purus feugiat ac sit
+            venenatis, faucibus fringilla sed netus sit. dignissim habitasse
+            lectus sit consectetur. Parturient varius curabitur aliquam nisl
+            malesuada sit non.
+          </p>
+        </div>
+      </section>
 
-        <h2 class="bold">Hiking the Ancient Pine Forest</h2>
+      <section class="services">
+        <!--TODO: block responsive-->
+        <div class="content-container text-center">
+          <!--TODO: underline-->
+          <h2 class="text-white text-5xl font-bold">Our Services</h2>
 
-        <span>3,420m(11,188ft)</span>
-        <span>37°23'8.42"N  118°10 43.91"E</span>
-        <span>Inyo National Forest</span>
+          <p class="text-white text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
+            tincidunt donec commodo scelerisque quis leo, egestas amet.
+          </p>
 
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam turpis odio integer vitae porta mattis. Vel,
-            blandit enim diam est. Aliquam, lobortis dui neque nisl quis pellentesque porttitor. A nulla eget sed
-            pellentesque nisl semper elit enim. Felis at tincidunt consequat mattis egestas egestas sapien sed.
-            Sollicitudin sed habitasse amet ac libero nibh et viverra. Purus feugiat ac sit venenatis, faucibus
-            fringilla sed netus sit.
-            dignissim habitasse lectus sit consectetur. Parturient varius curabitur aliquam nisl malesuada sit non.
-        </p>
-
-    </section>
-
-    <section class="services">
-        <h2>Our Services</h2>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt donec commodo scelerisque quis
-            leo,
-            egestas amet.
-        </p>
-
-        <div class="cards">
+          <!--TODO: cards-->
+          <div class="cards">
             <div class="card">Trekking/Mountaineering</div>
             <div class="card">Family/Group Tour</div>
             <div class="card">Mountain Biking/Rafting</div>
+          </div>
         </div>
-    </section>
 
-    <section class="booking">
-        <div>
-            <h2>Guide</h2>
+        <div class="content-container text-white">
+          <div>
+            <h3 class="text-4xl font-bold">Guide</h3>
 
             <div>
-                <h3>Jhone Towner</h3>
-                <span>Photographer</span>
-                <p>One of my favourite place to take picture</p>
+              <h4 class="text-2xl font-bold">Jhone Towner</h4>
+              <span class="text-lightgray text-xl">Photographer</span>
+              <p class="text-lg">One of my favourite place to take picture</p>
             </div>
 
             <div>
-                <h3>Lina Darja</h3>
-                <span>Guide</span>
-                <p>The best place to hike during summer</p>
+              <h4 class="text-2xl font-bold">Lina Darja</h4>
+              <span class="text-lightgray text-xl">Guide</span>
+              <p class="text-lg">The best place to hike during summer</p>
             </div>
 
             <button>Book Now</button>
-        </div>
+          </div>
 
-        <div>
-            <h2>Trails</h2>
+          <div>
+            <h3 class="text-4xl font-bold">Trails</h3>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam lectus velit eget arcu. Elementum erat
-                aliquam duis semper nulla nisl porttitor at.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+              lectus velit eget arcu. Elementum erat aliquam duis semper nulla
+              nisl porttitor at.
             </p>
 
             <div>
-                <h3>Schulman Grove</h3>
-                <span>Distance : 13 km</span>
-                <span>Time : 5h</span>
+              <h3>Schulman Grove</h3>
+              <span>Distance : 13 km</span>
+              <span>Time : 5h</span>
             </div>
             <div>
-                <h3>Patriarch Grove</h3>
-                <span>Distance : 9 km</span>
-                <span>Time : 3.7h</span>
+              <h3>Patriarch Grove</h3>
+              <span>Distance : 9 km</span>
+              <span>Time : 3.7h</span>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <footer>
+
+
+      <footer>
         <div>
-            <div class="logo">
-                <img alt="" src="/vite.svg"/>
-                <span>High <span class="bold">Peaks</span></span>
-                <span>Sports And Nature</span>
-            </div>
+          <div class="logo">
+            <img alt="" src="/vite.svg" />
+            <span>High <span class="bold">Peaks</span></span>
+            <span>Sports And Nature</span>
+          </div>
 
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Book Now</li>
-                </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Book Now</li>
+            </ul>
+          </nav>
         </div>
 
         <span>
-            Original design by <a href="https://www.figma.com/@rahuldev">Rahul Dev</a>
+          Original design by
+          <a href="https://www.figma.com/@rahuldev">Rahul Dev</a>
         </span>
 
-        <span>
-           Implemented by <a href="">Dariy Ablyazov</a>
-        </span>
-    </footer>
-
-</div>
-<script src="/src/main.ts" type="module"></script>
-</body>
+        <span> Implemented by <a href="">Dariy Ablyazov</a> </span>
+      </footer>
+    </div>
+    <script src="/src/main.ts" type="module"></script>
+  </body>
 </html>
