@@ -1,7 +1,6 @@
 import './style.css'
 
 function setRandomBackgroundColors() {
-  // Array of background colors to choose from
   const bgColors = [
     "#00FFFF", // Aqua
     "#7FFFD4", // Aquamarine
@@ -129,4 +128,4 @@ function setRandomBackgroundColors() {
 }
 
 // Call the function to set random background colors
-setRandomBackgroundColors();
+// setRandomBackgroundColors();

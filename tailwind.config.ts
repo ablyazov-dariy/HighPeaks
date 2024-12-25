@@ -8,6 +8,8 @@ export default {
       white: 'rgb(255,255,255)',
       black: 'rgb(0,0,0)',
       lightgray: 'rgba(255, 255, 255, 0.44)',
+      raspberry: '#530030',
+      apricot: '#FFD2BF',
     },
     fontFamily: {
       roboto: ['Roboto', 'serif'],
