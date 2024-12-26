@@ -8,3 +8,11 @@
   width: min(100% - 2rem, 1200px);
   margin: 0 auto;
 }
+
+h3 {
+  @apply after:bg-apricot mb-9 after:absolute after:block after:h-2 after:w-16 after:translate-y-6 after:content-[""];
+}
+
+.debug {
+  outline: 1px solid;
+}

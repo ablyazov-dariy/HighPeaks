@@ -10,6 +10,7 @@ export default {
       lightgray: 'rgba(255, 255, 255, 0.44)',
       raspberry: '#530030',
       apricot: '#FFD2BF',
+      debug: 'red',
     },
     fontFamily: {
       roboto: ['Roboto', 'serif'],
