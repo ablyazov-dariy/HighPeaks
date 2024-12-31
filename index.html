@@ -53,7 +53,7 @@
       <!--        </div>-->
       <!--      </div>-->
 
-      <!--      <section class="hiking">-->
+      <!--      <section id="about">-->
       <!--        &lt;!&ndash;TODO: block responsive&ndash;&gt;-->
       <!--        <div class="content-container">-->
       <!--          &lt;!&ndash;TODO: underline&ndash;&gt;-->
@@ -77,118 +77,173 @@
       <!--        </div>-->
       <!--      </section>-->
 
-      <section class="bg-black">
-        <!--TODO: block responsive-->
-        <!--        <div class="content-container text-center">-->
-        <!--          &lt;!&ndash;TODO: underline&ndash;&gt;-->
-        <!--          <h2 class="text-white text-5xl font-bold">Our Services</h2>-->
-
-        <!--          <p class="text-white text-lg">-->
-        <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus-->
-        <!--            tincidunt donec commodo scelerisque quis leo, egestas amet.-->
-        <!--          </p>-->
-
-        <!--          &lt;!&ndash;TODO: cards&ndash;&gt;-->
-        <!--          <div class="cards">-->
-        <!--            <div class="card">Trekking/Mountaineering</div>-->
-        <!--            <div class="card">Family/Group Tour</div>-->
-        <!--            <div class="card">Mountain Biking/Rafting</div>-->
-        <!--          </div>-->
-        <!--        </div>-->
-
-        <div
-          class="content-container text-white grid pt-[75px] max-sm:gap-14 sm:grid-cols-2"
-        >
-          <div class="grid gap-8 sm:gap-14">
-            <h3 class="text-3xl font-bold sm:text-4xl">Guide</h3>
-
-            <div class="flex flex-wrap gap-12">
-              <div class="grid max-w-64 grid-cols-[70px_1fr] gap-x-4 gap-y-6">
-                <img
-                  class="rounded-full"
-                  src="/jhone-towner.png"
-                  alt="jhone towner photo"
-                />
-                <div>
-                  <h4 class="text-xl font-bold sm:text-[1.375rem]">
-                    Jhone Towner
-                  </h4>
-                  <span class="text-lightgray text-lg sm:text-xl">
-                    Photographer
-                  </span>
-                </div>
-
-                <p class="col-span-2 sm:text-lg">
-                  One of my favourite place to take picture
-                </p>
-              </div>
-
-              <div
-                class="ml-auto grid max-w-64 grid-cols-[70px_1fr] gap-x-4 gap-y-6"
-              >
-                <img
-                  class="rounded-full"
-                  src="/lina-darja.png"
-                  alt="lina darja photo"
-                />
-                <div>
-                  <h4 class="text-xl font-bold sm:text-[1.375rem]">
-                    Lina Darja
-                  </h4>
-                  <span class="text-lightgray text-lg sm:text-xl"> Guide </span>
-                </div>
-
-                <p class="col-span-2 sm:text-lg">
-                  The best place to hike during summer
-                </p>
-              </div>
-            </div>
-
-            <button
-              class="w-fit rounded-full px-[36px] py-[10px] font-medium outline outline-2 outline-[#CC2D41] transition hover:bg-[#CC2D41] active:bg-[#CC2D41] max-sm:mx-auto sm:ml-auto"
-            >
-              Book Now
-            </button>
-          </div>
+      <section id="services">
+        <div class="bg-black overflow-hidden relative">
+          <img
+            alt=""
+            class="opacity-20 pointer-events-none absolute inset-0 h-full w-full object-cover"
+            src="/map-pattren.png"
+          />
 
           <div
-            class="grid content-start gap-8 sm:max-w-md sm:gap-14 sm:justify-self-end"
+            class="content-container relative z-10 grid gap-12 py-16 text-center"
           >
-            <h3 class="text-3xl font-bold sm:text-4xl">Trails</h3>
+            <h2
+              class="text-4xl font-bold text-white after:left-[50%] after:translate-x-[-50%] sm:text-5xl"
+            >
+              Our Services
+            </h2>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-              lectus velit eget arcu. Elementum erat aliquam duis semper nulla
-              nisl porttitor at.
+            <p class="mx-auto max-w-screen-sm text-white sm:text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
+              tincidunt donec commodo scelerisque quis leo, egestas amet.
             </p>
 
-            <div class="flex max-w-80 justify-between gap-4">
-              <div>
-                <h4 class="mb-2 font-bold sm:mb-3 sm:text-lg">
-                  Schulman Grove
-                </h4>
-                <p class="text-lightgray font-light">Distance : 13 km</p>
-                <p class="text-lightgray font-light">Time: 5h</p>
+            <div
+              class="grid grid-cols-[minmax(0,420px)] justify-center text-lg font-bold text-apricot max-md:gap-12 max-sm:px-4 sm:text-xl md:grid-cols-[repeat(3,minmax(0,220px))] md:justify-between"
+            >
+              <div class="flex flex-col gap-12">
+                <img
+                  alt="Trekking image"
+                  class="aspect-square rounded-full outline-dashed outline-1 outline-offset-4 outline-apricot"
+                  src="/card-1.png"
+                />
+                <span>Trekking/Mountaineering</span>
               </div>
-              <div>
-                <h4 class="mb-2 font-bold sm:mb-3 sm:text-lg">
-                  Patriarch Grove
-                </h4>
-                <p class="text-lightgray font-light">Distance: 9 km</p>
-                <p class="text-lightgray font-light">Time: 3.7h</p>
+
+              <div class="flex flex-col gap-12">
+                <img
+                  alt="Family image"
+                  class="aspect-square rounded-full outline-dashed outline-1 outline-offset-4 outline-apricot"
+                  src="/card-2.png"
+                />
+                <span>Family/Group Tour</span>
+              </div>
+
+              <div class="flex flex-col gap-12">
+                <img
+                  alt="Mountain Biking image"
+                  class="aspect-square rounded-full outline-dashed outline-1 outline-offset-4 outline-apricot"
+                  src="/card-3.png"
+                />
+                <span>Mountain Biking/Rafting</span>
               </div>
             </div>
           </div>
+
+          <div class="relative z-20">
+            <img
+              alt="mountains art"
+              class="mb-[-2px] w-full"
+              draggable="false"
+              src="/mountains-bottom-art.png"
+            />
+          </div>
         </div>
-        <div class="pre-footer mb-[-2px] sm:mt-[-40px]">
-          <img draggable="false" src="/footer-graphics.svg" alt="" />
+
+        <div class="bg-[#130713]">
+          <div
+            class="content-container grid pt-[75px] text-white max-sm:gap-14 sm:grid-cols-2"
+          >
+            <div class="grid gap-8 sm:gap-14">
+              <h3 class="text-3xl font-bold sm:text-4xl">Guide</h3>
+
+              <div class="flex flex-wrap gap-12">
+                <div class="grid max-w-64 grid-cols-[70px_1fr] gap-x-4 gap-y-6">
+                  <img
+                    alt="jhone towner photo"
+                    class="rounded-full"
+                    src="/jhone-towner.png"
+                  />
+                  <div>
+                    <h4 class="text-xl font-bold sm:text-[1.375rem]">
+                      Jhone Towner
+                    </h4>
+                    <span class="text-lg text-lightgray sm:text-xl">
+                      Photographer
+                    </span>
+                  </div>
+
+                  <p class="col-span-2 sm:text-lg">
+                    One of my favourite place to take picture
+                  </p>
+                </div>
+
+                <div
+                  class="ml-auto grid max-w-64 grid-cols-[70px_1fr] gap-x-4 gap-y-6"
+                >
+                  <img
+                    alt="lina darja photo"
+                    class="rounded-full"
+                    src="/lina-darja.png"
+                  />
+                  <div>
+                    <h4 class="text-xl font-bold sm:text-[1.375rem]">
+                      Lina Darja
+                    </h4>
+                    <span class="text-lg text-lightgray sm:text-xl">
+                      Guide
+                    </span>
+                  </div>
+
+                  <p class="col-span-2 sm:text-lg">
+                    The best place to hike during summer
+                  </p>
+                </div>
+              </div>
+
+              <button
+                class="z-10 w-fit rounded-full px-[36px] py-[10px] font-medium outline outline-2 outline-[#CC2D41] transition hover:bg-[#CC2D41] active:bg-[#CC2D41] max-sm:mx-auto sm:ml-auto"
+              >
+                Book Now
+              </button>
+            </div>
+
+            <div
+              class="grid content-start gap-8 sm:max-w-md sm:gap-14 sm:justify-self-end"
+            >
+              <h3 class="text-3xl font-bold sm:text-4xl">Trails</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
+                lectus velit eget arcu. Elementum erat aliquam duis semper nulla
+                nisl porttitor at.
+              </p>
+
+              <div class="flex max-w-80 justify-between gap-4">
+                <div>
+                  <h4 class="mb-2 font-bold sm:mb-3 sm:text-lg">
+                    Schulman Grove
+                  </h4>
+                  <p class="font-light text-lightgray">Distance : 13 km</p>
+                  <p class="font-light text-lightgray">Time: 5h</p>
+                </div>
+                <div>
+                  <h4 class="mb-2 font-bold sm:mb-3 sm:text-lg">
+                    Patriarch Grove
+                  </h4>
+                  <p class="font-light text-lightgray">Distance: 9 km</p>
+                  <p class="font-light text-lightgray">Time: 3.7h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-[-2px] sm:mt-[-40px]">
+            <img
+              alt=""
+              draggable="false"
+              src="/footer-graphics.svg"
+              width="100%"
+            />
+          </div>
         </div>
       </section>
 
-      <footer class="bg-raspberry">
+      <footer class="bg-[#530030]">
         <div class="content-container py-10">
           <div
-            class="text-apricot flex flex-col justify-between gap-7 uppercase sm:flex-row"
+            class="flex flex-col justify-between gap-7 uppercase text-apricot sm:flex-row"
           >
             <div class="grid grid-cols-[75px_auto] justify-center gap-1">
               <img alt="logo" src="/logo-light.svg" />
@@ -219,10 +274,10 @@
             </ul>
           </div>
 
-          <hr class="text-apricot my-7 opacity-35" />
+          <hr class="my-7 text-apricot opacity-35" />
 
           <div
-            class="text-white flex flex-col items-center justify-center gap-4"
+            class="flex flex-col items-center justify-center gap-4 text-white"
           >
             <span>
               Original design by
