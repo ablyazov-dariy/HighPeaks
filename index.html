@@ -8,50 +8,58 @@
   </head>
   <body class="font-roboto">
     <div id="app">
-      <!--            <div class="hero">-->
-      <!--              &lt;!&ndash;TODO: block responsive&ndash;&gt;-->
-      <!--              <header-->
-      <!--                class="content-container flex items-center justify-between gap-16 text-nowrap uppercase"-->
-      <!--              >-->
-      <!--                <div class="grid grid-cols-[75px_1fr] gap-1">-->
-      <!--                  <img-->
-      <!--                    alt="logo"-->
-      <!--                    class="shadow-[0_4px_4px_rgba(0,0,0,0.25)]"-->
-      <!--                    src="/logo.svg"-->
-      <!--                  />-->
+      <section>
+        <div>
+          <div class="content-container">
+            <header class="flex justify-between gap-7 uppercase">
+              <div class="grid justify-center gap-1 md:grid-cols-[75px_auto]">
+                <img alt="logo" src="/logo.svg" class="min-w-9" />
 
-      <!--                  <div class="hidden overflow-hidden text-center md:block">-->
-      <!--                    <p class="text-3xl">High <span class="font-bold">Peaks</span></p>-->
-      <!--                    <p class="text-xs text-gray">Sports And Nature</p>-->
-      <!--                  </div>-->
-      <!--                </div>-->
+                <div class="overflow-hidden text-center max-md:sr-only">
+                  <p class="text-3xl">
+                    High <span class="font-bold">Peaks</span>
+                  </p>
+                  <p class="text-xs opacity-35">Sports And Nature</p>
+                </div>
+              </div>
 
-      <!--      <nav class="flex-[0_1_400px]">-->
-      <!--        <ul class="flex items-center justify-between gap-4">-->
-      <!--          <li><a href="#">Home</a></li>-->
-      <!--          <li><a href="#about">About</a></li>-->
-      <!--          <li>-->
-      <!--            <a href="#services">Services</a>-->
-      <!--          </li>-->
-      <!--          <li>-->
-      <!--            <button class="text-white bg-black rounded-3xl px-[25px] py-[10px]">-->
-      <!--              Book Now-->
-      <!--            </button>-->
-      <!--          </li>-->
-      <!--        </ul>-->
-      <!--      </nav>-->
-      <!--              </header>-->
+              <ul
+                class="flex flex-auto items-center justify-between gap-4 text-sm sm:text-lg md:max-w-lg"
+              >
+                <li class="transition hover:opacity-35 max-sm:hidden">
+                  <a href="#">Home</a>
+                </li>
+                <li class="transition hover:opacity-35">
+                  <a href="#about">About</a>
+                </li>
+                <li class="transition hover:opacity-35">
+                  <a href="#services">Services</a>
+                </li>
+                <!--TODO: add link-->
+                <li class="transition hover:opacity-35">
+                  <a href="">
+                    <img
+                      class="max-w-[2em]"
+                      src="/github-mark.svg"
+                      alt="git hub icon"
+                    />
+                    <span class="sr-only">source code</span>
+                  </a>
+                </li>
+              </ul>
+            </header>
+          </div>
+        </div>
 
-      <!--        &lt;!&ndash;TODO: block responsive&ndash;&gt;-->
-      <!--        <div class="content-container">-->
-      <!--          <h1 class="text-7xl font-black uppercase">Explore The Mountain</h1>-->
+        <!--        <div class="content-container">-->
+        <!--          <h1 class="text-7xl font-black uppercase">Explore The Mountain</h1>-->
 
-      <!--          <p class="text-3xl text-gray">Live your dream and explore</p>-->
+        <!--          <p class="text-3xl text-gray">Live your dream and explore</p>-->
 
-      <!--          &lt;!&ndash;todo: underline&ndash;&gt;-->
-      <!--          <button class="text-xl font-medium">Explore now</button>-->
-      <!--        </div>-->
-      <!--      </div>-->
+        <!--          &lt;!&ndash;todo: underline&ndash;&gt;-->
+        <!--          <button class="text-xl font-medium">Explore now</button>-->
+        <!--        </div>-->
+      </section>
 
       <section id="about">
         <div class="bg-apricot">
