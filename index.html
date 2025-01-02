@@ -56,13 +56,13 @@
       <section id="about">
         <div class="bg-apricot">
           <div class="content-container">
-            <div class="max-w-xl debug grid sm:gap-12 gap-8">
-              <h2 class="text-4xl font-bold sm:text-5xl after:bg-black">
+            <div class="debug grid max-w-xl gap-8 sm:gap-12">
+              <h2 class="text-4xl font-bold after:bg-black sm:text-5xl">
                 Hiking the <br />
                 Ancient Pine Forest
               </h2>
 
-              <div class=" flex flex-wrap gap-x-12 gap-y-4">
+              <div class="flex flex-wrap gap-x-12 gap-y-4">
                 <div
                   class="inline-grid grid-cols-[20px_1fr] items-center gap-2 text-base leading-none text-gray"
                 >
@@ -109,7 +109,6 @@
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -279,7 +278,7 @@
       <footer class="bg-[#530030]">
         <div class="content-container py-10">
           <div
-            class="flex flex-col justify-between gap-7 uppercase text-apricot sm:flex-row"
+            class="flex flex-col justify-between gap-7 uppercase text-apricot md:flex-row"
           >
             <div class="grid grid-cols-[75px_auto] justify-center gap-1">
               <img alt="logo" src="/logo-light.svg" />
@@ -293,7 +292,7 @@
             </div>
 
             <ul
-              class="flex items-center justify-between gap-4 text-sm sm:flex-[0_1_450px] sm:text-lg"
+              class="flex flex-auto items-center justify-between gap-4 text-sm sm:text-lg md:max-w-lg"
             >
               <li class="transition hover:opacity-35">
                 <a href="#">Home</a>
@@ -304,8 +303,11 @@
               <li class="transition hover:opacity-35">
                 <a href="#services">Services</a>
               </li>
-              <li class="transition hover:opacity-35">
-                <button>BOOK NOW</button>
+              <!--TODO: add link-->
+              <li
+                class="overflow-hidden text-ellipsis whitespace-nowrap transition hover:opacity-35"
+              >
+                <a href="">Source Code</a>
               </li>
             </ul>
           </div>
@@ -331,8 +333,8 @@
                 class="font-medium text-[#FE6C40] underline-offset-2 hover:underline focus:underline"
                 href=""
                 >Dariy Ablyazov</a
-              ></span
-            >
+              >
+            </span>
           </div>
         </div>
       </footer>
