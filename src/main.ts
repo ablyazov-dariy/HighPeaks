@@ -6,9 +6,10 @@ import './style.css';
     'lime',
     'yellow',
     'rose',
-    'yellow',
-    'yellow',
-    'yellow',
+    'lime-orange',
+    'green',
+    'black',
+    'carmine',
   ];
 
   const contentContainers = document.querySelectorAll('.debug');

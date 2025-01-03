@@ -7,58 +7,103 @@
     <title>High Peaks</title>
   </head>
   <body class="font-roboto">
+    <!--    <div-->
+    <!--      class="fixed left-1/2 z-50 h-screen w-[2px] translate-x-[-1px] bg-debug"-->
+    <!--    ></div>-->
+    <!--    <div-->
+    <!--      class="fixed top-1/2 z-50 h-[2px] w-screen translate-y-[-1px] bg-debug"-->
+    <!--    ></div>-->
     <div id="app">
-      <section>
-        <div>
-          <div class="content-container">
-            <header class="flex justify-between gap-7 uppercase">
-              <div class="grid justify-center gap-1 md:grid-cols-[75px_auto]">
-                <img alt="logo" src="/logo.svg" class="min-w-9" />
+      <section class="stack">
+        <img
+          class="absolute inset-0 h-full w-full object-fill"
+          src="/hero/background.png"
+          alt="sky"
+        />
+        <img
+          class="absolute bottom-0 w-full object-fill"
+          src="/hero/mountain-back.png"
+          alt="mountain image"
+        />
 
-                <div class="overflow-hidden text-center max-md:sr-only">
-                  <p class="text-3xl">
-                    High <span class="font-bold">Peaks</span>
-                  </p>
-                  <p class="text-xs opacity-35">Sports And Nature</p>
-                </div>
-              </div>
+        <img
+          class="absolute bottom-0 right-0 w-4/5 object-fill"
+          src="/hero/mountain-right.png"
+          alt="mountain image"
+        />
+        <img
+          class="absolute bottom-0 left-0 w-3/5 object-fill"
+          src="/hero/mountain-left.png"
+          alt="mountain image"
+        />
 
-              <ul
-                class="flex flex-auto items-center justify-between gap-4 text-sm sm:text-lg md:max-w-lg"
-              >
-                <li class="transition hover:opacity-35 max-sm:hidden">
-                  <a href="#">Home</a>
-                </li>
-                <li class="transition hover:opacity-35">
-                  <a href="#about">About</a>
-                </li>
-                <li class="transition hover:opacity-35">
-                  <a href="#services">Services</a>
-                </li>
-                <!--TODO: add link-->
-                <li class="transition hover:opacity-35">
-                  <a href="">
-                    <img
-                      class="max-w-[2em]"
-                      src="/github-mark.svg"
-                      alt="git hub icon"
-                    />
-                    <span class="sr-only">source code</span>
-                  </a>
-                </li>
-              </ul>
-            </header>
+        <div
+          class="absolute right-[45%] aspect-square w-[500px] self-center rounded-full bg-apricot"
+        ></div>
+
+        <header
+          class="content-container absolute top-4 flex justify-between gap-7 justify-self-center uppercase sm:top-8"
+        >
+          <div class="grid justify-center gap-1 md:grid-cols-[75px_auto]">
+            <img alt="logo" src="/logo.svg" class="min-w-9" />
+
+            <div class="overflow-hidden text-center max-md:sr-only">
+              <p class="text-3xl">High <span class="font-bold">Peaks</span></p>
+              <p class="text-xs opacity-35">Sports And Nature</p>
+            </div>
           </div>
+
+          <ul
+            class="flex flex-auto items-center justify-between gap-4 text-sm sm:text-lg md:max-w-lg"
+          >
+            <li class="transition hover:opacity-35 max-sm:hidden">
+              <a href="#">Home</a>
+            </li>
+            <li class="transition hover:opacity-35">
+              <a href="#about">About</a>
+            </li>
+            <li class="transition hover:opacity-35">
+              <a href="#services">Services</a>
+            </li>
+            <!--TODO: add link-->
+            <li class="transition hover:opacity-35">
+              <a href="">
+                <img
+                  class="max-w-[2em]"
+                  src="/github-mark.svg"
+                  alt="git hub icon"
+                />
+                <span class="sr-only">source code</span>
+              </a>
+            </li>
+          </ul>
+        </header>
+        <div class="content-container absolute self-center justify-self-center">
+          <h1
+            class="mb-6 text-5xl font-black uppercase leading-relaxed sm:mb-8 sm:text-7xl"
+          >
+            Explore <br />
+            The Mountain
+          </h1>
+
+          <p class="mb-10 text-2xl text-gray sm:mb-12 sm:text-3xl">
+            Live your dream and explore
+          </p>
+
+          <!--todo: underline-->
+          <button class="text-xl font-medium sm:text-xl">Explore now</button>
         </div>
 
-        <!--        <div class="content-container">-->
-        <!--          <h1 class="text-7xl font-black uppercase">Explore The Mountain</h1>-->
-
-        <!--          <p class="text-3xl text-gray">Live your dream and explore</p>-->
-
-        <!--          &lt;!&ndash;todo: underline&ndash;&gt;-->
-        <!--          <button class="text-xl font-medium">Explore now</button>-->
-        <!--        </div>-->
+        <img
+          class="pointer-events-none absolute bottom-[-5%] left-[-10rem] w-[clamp(300px,50vw,1000px)]"
+          src="/hero/cloud.png"
+          alt="cloud image"
+        />
+        <img
+          class="pointer-events-none absolute bottom-[10vw] w-[clamp(300px,50vw,600px)] justify-self-center"
+          src="/hero/cloud.png"
+          alt="cloud image"
+        />
       </section>
 
       <section id="about">

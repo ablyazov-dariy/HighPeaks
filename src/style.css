@@ -18,3 +18,14 @@ h3 {
 .debug {
   outline: 1px solid;
 }
+
+.stack {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 'stack';
+}
+
+.stack > * {
+  grid-area: stack;
+}
