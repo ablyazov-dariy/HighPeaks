@@ -14,14 +14,8 @@ h2,
 h3 {
   @apply mb-9 after:absolute after:block after:h-2 after:w-16 after:translate-y-6 after:bg-apricot after:content-[""];
 }
-
-.debug {
-  outline: 1px solid;
-}
-
 .stack {
   position: relative;
-
   display: grid;
   grid-template-areas: 'stack';
 }
