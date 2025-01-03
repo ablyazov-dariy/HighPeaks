@@ -1,21 +1,8 @@
 import './style.css';
+import { gsap } from "gsap";
 
-(() => {
-  const bgColors = [
-    'red',
-    'lime',
-    'yellow',
-    'rose',
-    'lime-orange',
-    'green',
-    'black',
-    'carmine',
-  ];
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  const contentContainers = document.querySelectorAll('.debug');
 
-  contentContainers.forEach(
-    (container: any, index) =>
-      (container.style!.outlineColor = bgColors[index]),
-  );
-})();
+gsap.registerPlugin(ScrollTrigger);
+
