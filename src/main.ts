@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: '#screen',
-    markers: true,
     scrub: 1,
     pin: true,
     end: '200%',
@@ -19,14 +18,14 @@ const tl = gsap.timeline({
   },
 });
 
-tl.to('#screen > [src="/hero/cloud.png"]:not(:last-child)', {
+tl.to('#cloud-1', {
   xPercent: -50,
   yPercent: 100,
   ease: Back.easeIn,
 });
 
 tl.to(
-  '#screen > [src="/hero/cloud.png"]:last-child',
+  '#cloud-2',
   {
     x: '40vw',
     y: '-100vh',
@@ -36,7 +35,7 @@ tl.to(
 );
 
 tl.to(
-  '#screen > [src="/hero/mountain-back.png"]',
+  '#mountain-back',
   {
     yPercent: -10,
     scale: 1.2,
@@ -45,7 +44,7 @@ tl.to(
 );
 
 tl.to(
-  '#screen > [src="/hero/mountain-right.png"]',
+  '#mountain-right',
   {
     xPercent: 10,
     yPercent: 100,
@@ -54,7 +53,7 @@ tl.to(
 );
 
 tl.to(
-  '#screen > [src="/hero/mountain-left.png"]',
+  '#mountain-left',
   {
     xPercent: -10,
     yPercent: 100,
@@ -63,7 +62,7 @@ tl.to(
 );
 
 tl.to(
-  '#screen > img + div',
+  '#sun',
   {
     width: () => window.innerWidth * 6,
     ease: 'power2.in',
@@ -77,6 +76,30 @@ tl.to(
   {
     opacity: 0,
     duration: 30,
+  },
+  '-=30',
+);
+
+tl.from('#about-mountain-bottom', {
+  yPercent: 100,
+  duration: 30,
+});
+
+tl.from(
+  '#about-mountain',
+  {
+    yPercent: 100,
+    duration: 50,
+  },
+  '-=30',
+);
+
+tl.from(
+  '#about-content',
+  {
+    pointerEvents: 'none',
+    opacity: 0,
+    duration: 50,
   },
   '-=30',
 );
