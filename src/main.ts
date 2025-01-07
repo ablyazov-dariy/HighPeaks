@@ -1,7 +1,7 @@
 import './styles/style.css';
 import { gsap } from 'gsap';
 
-import { ScrollTrigger } from 'gsap/all';
+import { ScrollTrigger, Back, Power2 } from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger);
 
