@@ -11,7 +11,8 @@
 
 /* Headings Underline */
 h2,
-h3 {
+h3,
+.h-underline {
   @apply mb-9 after:absolute after:block after:h-2 after:w-16 after:translate-y-6 after:bg-apricot after:content-[""];
 }
 
