@@ -14,7 +14,9 @@ h2,
 h3 {
   @apply mb-9 after:absolute after:block after:h-2 after:w-16 after:translate-y-6 after:bg-apricot after:content-[""];
 }
+
 .stack {
+  overflow: hidden;
   position: relative;
   display: grid;
   grid-template-areas: 'stack';
@@ -22,4 +24,5 @@ h3 {
 
 .stack > * {
   grid-area: stack;
+  position: relative;
 }
